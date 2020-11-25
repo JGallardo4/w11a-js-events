@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  min-height: 100vh;
+}
+
+main .block > * {
+  display: none;
+}
+
+main .block:nth-of-type(even) {
+  background-color: lightblue;
+}
+
+main .block:nth-of-type(odd) {
+  background-color: lightseagreen;
+}
+
+main .block.on {
+  background-color: lightpink;
+}
+
+main .block.happy > * {
+  display: block;
+}
+/*# sourceMappingURL=main.css.map */
